@@ -1,7 +1,9 @@
+import Body from "./components/Body";
+
 function App() {
   return (
     <div className="App">
-      hello we are building netflix gpt
+      <Body/>
     </div>
   );
 }
