@@ -1,35 +1,16 @@
-import React from 'react';
+import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
 import Header from './Header';
-
-class ErrorBoundary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError(error) {
-    // Update state to indicate an error occurred
-    return { hasError: true };
-  }
-
-  render() {
-    if (this.state.hasError) {
-      // Render fallback UI
-      return <div>Something went wrong with the header component.</div>;
-    }
-
-    // If no error, render children as normal
-    return this.props.children;
-  }
-}
+import MainContainer from './MainContainer';
+import SecondryContainer from './SecondryContainer';
 
 function Browse() {
-  return (
-    <ErrorBoundary>
+  useNowPlayingMovies();
+   return (    
       <div>
         <Header />
-      </div>
-    </ErrorBoundary>
+        <MainContainer/>
+        <SecondryContainer/>
+      </div>    
   );
 }
 

@@ -73,7 +73,7 @@ const Login = () => {
     <div className='relative h-screen'>
       <Header />
       <div className="absolute inset-0 flex justify-center items-center bg-gray-900 bg-opacity-75">
-        <img
+      <img
           className='absolute inset-0 w-full h-full object-cover opacity-50'
           src={BACKGROUND_URL}
           alt='Background Image'
