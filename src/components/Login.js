@@ -76,7 +76,7 @@ const Login = () => {
       <img
           className='absolute inset-0 w-full h-full object-cover opacity-50'
           src={BACKGROUND_URL}
-          alt='Background Image'
+          alt='BackgroundImage'
           />
         <div className="z-10 text-white bg-gray-900 p-8 rounded-lg shadow-xl w-80 bg-opacity-80">
           <h2 className=" text-2xl font-bold mb-6">{isSignInForm ? "Sign In" : "Sign Up"}</h2>

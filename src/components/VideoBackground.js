@@ -9,7 +9,7 @@ function VideoBackground({movieId}) {
   return (
     <div>
       <iframe 
-      className="w-screen aspect-video"
+      className="w-screen aspect-video object-cover"
       src={"https://www.youtube.com/embed/"+trailerVideo?.key +'?&autoplay=1&mute=1'}
       title="YouTube video player"  
       
