@@ -15,7 +15,7 @@ function VideoBackground({ movieId }) {
           "?&autoplay=1&mute=1"
         }
         title="YouTube video player"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );
